@@ -1,0 +1,110 @@
+/* skills */
+$html: 80%;
+$css: 70%;
+$sass: 65%;
+$js: 60%;
+$ts: 30%;
+$nodejs: 90%;
+$vuejs: 65%;
+$react: 10%;
+$py: 5%;
+
+.skill {
+  background-image: linear-gradient(135deg, #485aff, #2be6ff);
+  padding: 15px 10px;
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
+  width: 500px;
+  margin-top: 20px;
+}
+
+.skill__contents {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  p {
+    margin-left: 15px;
+  }
+}
+
+.skill__bar__container {
+  width: 80%;
+  background-color: #fff;
+  border-radius: 10px;
+  height: 10px;
+}
+
+.skill__bar {
+  width: 0;
+  transition: width 2s;
+}
+
+.iconify {
+  margin-right: 2px;
+}
+
+
+#css.inview {
+  background: #2be6ff;
+  width: $css;
+  height: 100%;
+  border-radius: 10px;
+}
+
+#html.inview {
+  background: #2be6ff;
+  width: $html;
+  height: 100%;
+  border-radius: 10px;
+}
+
+#sass.inview {
+  background: #2be6ff;
+  width: $sass;
+  height: 100%;
+  border-radius: 10px;
+}
+
+#js.inview {
+  background: #2be6ff;
+  width: $js;
+  height: 100%;
+  border-radius: 10px;
+}
+
+#ts.inview {
+  background: #2be6ff;
+  width: $ts;
+  height: 100%;
+  border-radius: 10px;
+}
+
+#nodejs.inview {
+  background: #2be6ff;
+  width: $nodejs;
+  height: 100%;
+  border-radius: 10px;
+}
+
+#vuejs.inview {
+  background: #2be6ff;
+  width: $vuejs;
+  height: 100%;
+  border-radius: 10px;
+}
+
+#react.inview {
+  background: #2be6ff;
+  width: $react;
+  height: 100%;
+  border-radius: 10px;
+}
+
+#py.inview {
+  background: #2be6ff;
+  width: $py;
+  height: 100%;
+  border-radius: 10px;
+}

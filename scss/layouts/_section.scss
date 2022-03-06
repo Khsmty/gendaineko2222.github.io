@@ -1,0 +1,186 @@
+.section {
+  padding: 2.5rem 5rem;
+
+  @include sp {
+    padding: 6%;
+  }
+}
+
+#top {
+  height: 100vh;
+  background-image: linear-gradient(135deg, #485aff, #2be6ff);
+  display: flex;
+  align-items: center;
+
+  .container {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+
+    .text {
+      width: 50%;
+      color: #fff;
+
+      h1 {
+        font-size: 3rem;
+        margin: 1.2rem 0;
+      }
+
+      p {
+        margin: 5px 0;
+      }
+
+      @include sp {
+        width: 100%;
+      }
+    }
+
+    .img {
+      width: 50%;
+      text-align: center;
+
+      @include sp {
+        width: 100%;
+      }
+    }
+
+    @include sp {
+      flex-wrap: wrap-reverse;
+    }
+  }
+}
+
+#about {
+  background: #fff;
+
+  & > h1 {
+    position: relative;
+  }
+
+  & > h1::after {
+    content: "";
+    display: block;
+    height: 4px;
+    background: linear-gradient(135deg, #485aff, #2be6ff);
+  }
+
+  #introduction {
+    @include sp {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  .title-wrapper {
+    margin: 30px 0 0 0;
+  }
+
+  .about-title {
+    font-size: 1.5rem;
+    display: inline-block;
+    position: relative;
+    padding-left: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .about-title:before {
+    left: 0;
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #333;
+    top: 0;
+    top: 50%;
+    display: inline-block;
+    margin: auto;
+    width: 0;
+    transition: width 1.5s;
+  }
+
+  .about-title.inview:before {
+    width: 2rem;
+  }
+
+  .container {
+
+    &#introduction {
+        display: flex;
+    }
+
+    align-items: center;
+
+    .icon {
+      margin: 0 0 20px;
+
+      .border {
+        width: 100px;
+        border-radius: 50%;
+        padding: 5px;
+        background: linear-gradient(to right bottom, #485affa2, #2be6ffa2);
+      }
+
+      .circle {
+        height: 100px;
+        border-radius: 50%;
+        background-image: url("../../img/gendaineko.webp");
+      }
+    }
+
+    .text {
+      margin: 0 30px;
+
+      p {
+        line-height: 30px;
+      }
+
+      @include sp {
+        margin: 0;
+      }
+    }
+  }
+}
+
+
+#skills {
+  & > h1 {
+    position: relative;
+  }
+
+  & > h1::after {
+    content: "";
+    display: block;
+    height: 4px;
+    background: linear-gradient(135deg, #485aff, #2be6ff);
+  }
+}
+
+#works {
+  & > h1 {
+    position: relative;
+  }
+
+  & > h1::after {
+    content: "";
+    display: block;
+    height: 4px;
+    background: linear-gradient(135deg, #485aff, #2be6ff);
+  }
+}
+
+#contact {
+  & > h1 {
+    position: relative;
+  }
+
+  & > h1::after {
+    content: "";
+    display: block;
+    height: 4px;
+    background: linear-gradient(135deg, #485aff, #2be6ff);
+  }
+
+  & > p {
+    padding: 30px 0;
+  }
+}

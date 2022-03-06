@@ -1,0 +1,51 @@
+.socials {
+  .social {
+    box-shadow: #333;
+    display: flex;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    text-decoration: none;
+    color: #000;
+    margin-top: 20px;
+
+    &__icon {
+      display: flex;
+      align-items: center;
+      font-size: 2rem;
+    }
+
+    &__text {
+      margin-left: 20px;
+      &__title {
+        margin-top: 5px;
+        font-weight: bold;
+      }
+
+      &__id {
+        margin-bottom: 5px;
+        color: rgb(150, 150, 150);
+        font-size: 0.9rem;
+      }
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+      transition: all 0.5s;
+    }
+  }
+}
+
+#github {
+  color: #171515;
+}
+
+#discord {
+  color: #586aea;
+}
+#twitter {
+  color: #00acee;
+}
